@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Register information at Blockchain</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+
+  <body class="container">
+
+    <h1 class="page-header">NFT Collection Factory - Goerli network</h1>
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Create a new collection</h3>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="nftName">Name:</label> </td>
+                <td>
+                  <input class="form-control" id="nftName">
+                </td>
+                <td><label for="nftSymbol">Symbol:</label> </td>
+                <td>
+                  <input class="form-control" id="nftSymbol">
+                </td>
+              </tr>
+            </table>
+          </div>
+          <a href="#" onclick="createCollection()" class="btn btn-primary">Create</a>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Mint a new token id</h3>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="nftCollection">NFT Address:</label> </td>
+                <td>
+                  <input class="form-control" id="nftAddress">
+                </td>
+                <td><label for="nftRecipient">Recipient:</label> </td>
+                <td>
+                  <input class="form-control" id="nftRecipient">
+                </td>
+                <td><label for="tokenUri">Uri:</label> </td>
+                <td>
+                  <input class="form-control" id="nftTokenUri">
+                </td>
+              </tr>
+            </table>
+          </div>
+          <a href="#" onclick="mintToken()" class="btn btn-primary">Mint</a>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>
